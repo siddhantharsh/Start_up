@@ -1,15 +1,15 @@
-# Homely — Aesthetic Personal Startpage
+# Start_up — Aesthetic Personal Startpage
 
 A clean and cozy custom startpage for your browser that replaces the default new tab. Features dynamic greetings and organized links for a peaceful and productive workflow.
 
-### 🌟 Key Features:
+### Key Features:
 - **Smart Greetings** that change by time of day, day of the week, and holidays
 - **Organized Links** in categories like Work and Personal
 - **Minimalist Design** with smooth animations and loading effects
 - **Lightweight & Fast** — built with pure HTML, CSS, and JavaScript
 - **Customizable** - Easy to modify colors, links, and layout
 
-### 🚀 Quick Setup:
+### Quick Setup:
 
 #### As a New Tab Extension:
 1. Download or clone this repository
@@ -22,13 +22,13 @@ A clean and cozy custom startpage for your browser that replaces the default new
 - **Netlify**: Connect your GitHub repo for automatic deployments
 - **Vercel**: Deploy directly from GitHub
 
-### 🎨 Customization:
+### Customization:
 - **Links**: Edit [`js/links.js`](js/links.js) to add your favorite websites
 - **Name**: Change "シッダント" in [`index.html`](index.html) to your name
 - **Styling**: Modify CSS files in the [`css/`](css/) directory
 - **Greetings**: Customize messages in [`js/greeting.js`](js/greeting.js)
 
-### 📁 Project Structure:
+### Project Structure:
 ```
 ├── index.html          # Main HTML file
 ├── css/               # Stylesheets
@@ -52,5 +52,6 @@ A clean and cozy custom startpage for your browser that replaces the default new
 
 Easy to customize. No dependencies or build tools required.
 
+**🌐 Live Demo:** [https://my-hometab.web.app](https://my-hometab.web.app)
+
 ---
-**Live Demo**: Coming soon! 🚀
