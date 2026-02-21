@@ -1,0 +1,117 @@
+.content-wrapper {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+}
+
+.welcome-section {
+    padding-bottom: 15px;
+}
+
+.welcome-title {
+    font-size: 1.30rem;
+    font-weight: 500;
+    color: #88c0d0; /* Nord 8: Bright Frost Blue */
+    margin: 0 0 5px 0;
+    letter-spacing: 0.5px;
+}
+
+.greeting {
+    font-size: 1rem;
+    color: #81a1c1; /* Nord 9: Muted Blue */
+    margin: 0;
+    font-weight: 400;
+}
+
+/* NEW: Search Bar Styling */
+.search-section {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #2e3440; /* Nord 0: Deep Dark Base */
+    border: 1px solid rgba(136, 192, 208, 0.3); /* Subtle Frost Blue Border */
+    color: #d8dee9; /* Nord 4: Snow Storm White */
+    font-family: inherit; /* Inherits Noto Sans */
+    font-size: 14px;
+    border-radius: 0; /* Sharp edges */
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#search-input:focus {
+    border-color: #88c0d0; /* Nord 8: Bright Frost Blue */
+    box-shadow: 0 0 10px rgba(136, 192, 208, 0.15);
+    background-color: #3b4252; /* Nord 1: Lighter Dark */
+}
+
+#search-input::placeholder {
+    color: #4c566a; /* Nord 3: Greyish Blue */
+}
+
+.section-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #81a1c1; /* Nord 9: Muted Blue */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #3b4252; /* Nord 1: Dark Slate */
+    color: #d8dee9; /* Nord 4: Snow Storm White */
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0; /* Removed rounded borders */
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(136, 192, 208, 0.15); /* Subtle Frost Blue Border */
+    backdrop-filter: blur(10px);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(136, 192, 208, 0.2), transparent); /* Frost Blue Shine */
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover {
+    color: #2e3440; /* Nord 0: Deep Dark Base */
+    background-color: #88c0d0; /* Nord 8: Bright Frost Blue */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
+                0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    border-color: rgba(136, 192, 208, 0.6);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

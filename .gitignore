@@ -1,0 +1,31 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (if you add any build tools later)
+node_modules/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+
+# Personal configuration files (if you create any)
+config.local.js
+settings.local.js
