@@ -8,7 +8,7 @@
 }
 
 .welcome-section {
-    padding-bottom: 15px;
+    padding-bottom: 35px;
 }
 
 .welcome-title {
@@ -24,36 +24,6 @@
     color: #81a1c1; /* Nord 9: Muted Blue */
     margin: 0;
     font-weight: 400;
-}
-
-/* NEW: Search Bar Styling */
-.search-section {
-    margin-bottom: 25px;
-    width: 100%;
-}
-
-#search-input {
-    width: 100%;
-    padding: 12px 15px;
-    background-color: #2e3440; /* Nord 0: Deep Dark Base */
-    border: 1px solid rgba(136, 192, 208, 0.3); /* Subtle Frost Blue Border */
-    color: #d8dee9; /* Nord 4: Snow Storm White */
-    font-family: inherit; /* Inherits Noto Sans */
-    font-size: 14px;
-    border-radius: 0; /* Sharp edges */
-    outline: none;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-}
-
-#search-input:focus {
-    border-color: #88c0d0; /* Nord 8: Bright Frost Blue */
-    box-shadow: 0 0 10px rgba(136, 192, 208, 0.15);
-    background-color: #3b4252; /* Nord 1: Lighter Dark */
-}
-
-#search-input::placeholder {
-    color: #4c566a; /* Nord 3: Greyish Blue */
 }
 
 .section-title {

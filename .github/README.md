@@ -53,4 +53,4 @@ A clean and cozy custom startpage for your browser that replaces the default new
 Easy to customize. No dependencies or build tools required.
 
 ---
-**Live Demo:** [https://my-hometab.web.app](https://my-hometab.web.app) 🚀
+**Live Demo:** [https://my-hometab.web.app](https://my-hometab.web.app)

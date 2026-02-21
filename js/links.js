@@ -6,10 +6,14 @@ const linkCategories = {
         { name: "Havloc", url: "https://app.haveloc.com/login" },
         { name: "Google Drive", url: "https://drive.google.com" },
         { name: "Collab", url: "https://colab.research.google.com/" },
+        { name: "NotebookLM", url: "https://notebooklm.google.com/" },
+        { name: "Canva", url: "https://www.canva.com/" },
         { name: "Leetcode", url: "https://leetcode.com" },
         { name: "Github", url: "https://github.com" },
         { name: "Netlify", url: "https://www.netlify.com" },
-        { name: "Vercel", url: "https://vercel.com" },
+        { name: "Vercel", url: "https://vercel.com" }
+    ],
+    tools: [
         { name: "ChatGPT", url: "https://chatgpt.com/" },
         { name: "Claude", url: "https://claude.ai" },
         { name: "Gemini", url: "https://gemini.google.com" },
@@ -31,8 +35,22 @@ function createLinks() {
             linkElement.href = link.url;
             linkElement.className = 'btn';
             linkElement.textContent = link.name;
-            linkElement.addEventListener('click', handleLinkClick);
+            linkElement.target = '_blank';
+            linkElement.rel = 'noopener noreferrer';
             workContainer.appendChild(linkElement);
+        });
+    }
+    
+    const toolsContainer = document.getElementById('tools-links');
+    if (toolsContainer) {
+        linkCategories.tools.forEach(link => {
+            const linkElement = document.createElement('a');
+            linkElement.href = link.url;
+            linkElement.className = 'btn';
+            linkElement.textContent = link.name;
+            linkElement.target = '_blank';
+            linkElement.rel = 'noopener noreferrer';
+            toolsContainer.appendChild(linkElement);
         });
     }
     
@@ -43,26 +61,10 @@ function createLinks() {
             linkElement.href = link.url;
             linkElement.className = 'btn';
             linkElement.textContent = link.name;
-            linkElement.addEventListener('click', handleLinkClick);
+            linkElement.target = '_blank';
+            linkElement.rel = 'noopener noreferrer';
             personalContainer.appendChild(linkElement);
         });
-    }
-}
-
-function handleLinkClick(e) {
-    e.preventDefault();
-    
-    showLoader();
-    
-    setTimeout(() => {
-        window.location.href = this.href;
-    }, 300);
-}
-
-function showLoader() {
-    const loader = document.getElementById('loader');
-    if (loader) {
-        loader.classList.remove('hidden');
     }
 }
 
